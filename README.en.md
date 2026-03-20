@@ -138,23 +138,6 @@ For example, save the `.trans` file, translate it with LinguaGacha or another AI
 After translating with Lingua, AI can easily break in-text codes such as `\\c`, `\\fw`, and `\\r`, changing them into `\c`, `\fw`, and `\r`.  
 You can fix this in Translator++ by using batch replace with regular expression mode enabled. For example, replace `(?<!\\)\\c` with `\\c`.
 
-For newly created SRPG projects, the following dialogs are opened with default tag filtering:
-
-- `Translate All`
-- `Export`
-- `Inject`
-
-Default filter rule:
-
-- selected tags: `red`, `blue`
-- mode: `blacklist`
-
-This means:
-
-- rows tagged `red` or `blue` are skipped by default
-- ordinary translatable rows remain included
-- users can still manually change the filter before running the action
-
 ### 3. Inject / Apply Translation
 
 Recommended workflow:
@@ -209,7 +192,7 @@ The main risk is not that ordinary other engines will immediately break translat
 
 If another addon modifies the same core files, the version installed last may override the earlier changes.
 
-## Release Scope And Limitations
+## Limitations
 
 - Windows only
 - Directory targets are the main supported export / inject mode
